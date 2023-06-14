@@ -49,7 +49,7 @@ fun LoginView() {
 
     Column(modifier = Modifier
         //.fillMaxHeight()
-        .padding(0.dp, 20.dp), verticalArrangement = Arrangement.spacedBy(60.dp),
+        .padding(0.dp, 40.dp), verticalArrangement = Arrangement.spacedBy(80.dp),
         horizontalAlignment = Alignment.CenterHorizontally)
     {
         CustomRow()
@@ -62,15 +62,6 @@ fun LoginView() {
                 .height(80.dp)
                 .weight(1.0f, false) /*onValueChange = {}*/)
 
-        
-        MyOutlinedTextField(field = code, label = stringResource(R.string.password), modifier = Modifier
-            //.padding(50.dp)
-            .height(80.dp)
-            .weight(1.0f, false),
-            onValueChange = {
-                Toast.makeText(context, email.value, Toast.LENGTH_SHORT).show()
-                //println(it)
-            })
 
         /*TextField(
             value = password.value,
@@ -92,7 +83,7 @@ fun LoginView() {
         MyOutlinedTextField(
             field = password,
             onValueChange = { password.value = it },
-            label = stringResource(R.string.code),
+            label = stringResource(R.string.password),
             modifier = Modifier
                 .height(80.dp)
                 .weight(1.0f, false),
