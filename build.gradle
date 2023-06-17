@@ -4,6 +4,9 @@ buildscript {
         //compose_version = '1.0.1'
         compose_version = '1.4.3'
     }
+    dependencies {
+        classpath 'com.google.gms:google-services:4.3.14'
+    }
 }
 
 plugins {
